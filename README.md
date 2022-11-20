@@ -5,13 +5,17 @@ Link para as badges https://github.com/alexandresanlim/Badges4-README.md-Profile
 Link para outras informações https://digitalinnovation.one/artigos/6-passos-para-criar-um-readme-bonitao-de-perfil-no-github
 -->
 
-![Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) steph.hoel@gmail.com 
+![Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white) steph.hoel@gmail.com
 
 ![Badge](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white) Hoel#0529
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=for-the-badge&logo=Github&logoColor=white&link=https://github.com/stephhoel)](https://github.com/stephhoel)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/stephhoel/)](https://www.linkedin.com/in/stephhoel/)
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=for-the-badge&labelColor=C13584&logo=instagram&logoColor=white&link=https://www.instagram.com/steph.hoel/)](https://www.instagram.com/steph.hoel/)
+
+CodeWars
+
+![Badge](https://www.codewars.com/users/StephHoel/badges/large)
 
 ## 💬 Sobre Mim
 
