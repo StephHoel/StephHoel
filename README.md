@@ -19,9 +19,9 @@ CodeWars
 
 ## 💬 Sobre Mim
 
-Atualmente eu sou Estagiária na Avanade Brasil, na área de Engenharia de Software, e curso Tecnólogo em Sistemas para Internet.
+Atualmente eu sou DevJr (ou Sr.Assoc) na Avanade Brasil, na área de Engenharia de Software, e curso Tecnólogo em Sistemas para Internet.
 
-Estou desenvolvendo um projeto para imobiliárias de pequeno porte, será um software gratuito onde eles poderão ter em fácil acesso seus clientes e suas informações mais relevantes. Quem quiser participar do meu projeto, me chame no e-mail ou no discord para vermos onde você pode me ajudar!
+Estou desenvolvendo alguns projetos no meu pouco tempo livre e todos você pode ver aqui no GitHub. Quem quiser participar de algum, me chame no e-mail ou no discord para vermos onde podemos nos ajudar mutuamente!
 
 E não menos importante: meus pronomes são Ela/Ele/Dela/Dele. Fique a vontade para me chamar da forma que quiser!
 
