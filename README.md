@@ -110,23 +110,9 @@ Fun fact: Estudo há mais de 10 anos desenvolvimento web sozinha, fazendo pequen
 ![Badge](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Badge](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 
-### Testes:
-
-![Badge](https://github-readme-activity-graph.cyclic.app/graph?username={stephhoel}&theme=react-dark)
-
-![Badge](https://gists-readme.yizack.com/api?user={stephhoel})
-
-![Badge](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={stephhoel}&theme=github_dark)
-
-![Badge](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={stephhoel}&theme=dark)
-
-![Badge](https://github-readme-stats.vercel.app/api/top-langs/?username={stephhoel}&theme=dark)
-
-![Badge](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F{stephhoel}1212%2Fhit-counter)
+### Estatísticas:
 
 ![Badge](https://github-readme-streak-stats.herokuapp.com/?user={stephhoel}&theme=dark)
-
-![Badge](https://github-profile-trophy.vercel.app/?username={stephhoel}&theme=dark)
 
 <!-- ## Visitas
 
