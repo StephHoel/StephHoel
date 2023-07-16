@@ -2,24 +2,29 @@
 layout: default
 ---
 
-<!-- {% include site-header.html %} -->
-
 <header class="header">
   <div class="container">
+    <a class="logo" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title | append: ' logo' }}"/>
+    </a>
+
     <nav class="nav  nav--header">
       <ul class="list  list--nav">
-        <li class="item  item--nav item--current">
-          <a href="/">Home</a>
-        </li>
-        <li class="item  item--nav item--current">
-          <a href="/blog">Blog</a>
-        </li>
+        {% for item in site.navigation_header %}
+    
+          {% if item.url contains '://' %}
+            {% assign url = item.url %}
+          {% else %}
+            {% assign url = item.url | relative_url %}
+          {% endif %}
+    
+          <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
+            <a href="{{ url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
   </div>
-
-  <!-- {% include site-feature.html %} -->
-
 </header>
 
 <main class="main  container">
