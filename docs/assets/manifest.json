@@ -4,11 +4,11 @@ layout: null
 sitemap: false
 ---
 {
-  "lang": "{{ site.lang | default: "en-US" }}",
+  "lang": "{{ site.lang | default: "pt-BR" }}",
   "name": "{{ site.title }}",
   "short_name": "{{ site.short_name | default: site.title | replace: ' ', '' }}",
   "theme_color": "{{ site.manifest.theme_color | default: '#24292e' }}",
-  "background_color": "{{ site.manifest.background_color | default: '#ffffff' }}",
+  "background_color": "{{ site.manifest.background_color | default: '#000000' }}",
   {% if site.favicons -%}
     "icons": [
       {% for icon in site.favicons -%}
@@ -19,6 +19,6 @@ sitemap: false
       {% endfor %}
     ],
   {% endif -%}
-  "start_url": "/",
+  "start_url": "/StephHoel/",
   "display": "standalone"
 }
