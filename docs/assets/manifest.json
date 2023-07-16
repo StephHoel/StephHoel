@@ -8,7 +8,7 @@ sitemap: false
   "name": "{{ site.title }}",
   "short_name": "{{ site.short_name | default: site.title | replace: ' ', '' }}",
   "theme_color": "{{ site.manifest.theme_color | default: '#24292e' }}",
-  "background_color": "{{ site.manifest.background_color | default: '#000000' }}",
+  "background_color": "{{ site.manifest.background_color | default: '#FFFFFF' }}",
   {% if site.favicons -%}
     "icons": [
       {% for icon in site.favicons -%}
