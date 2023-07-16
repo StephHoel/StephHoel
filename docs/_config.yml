@@ -90,7 +90,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: pt-BR # Set the site language
 title: "Steph Hoel" # Site name or title, also used in jekyll-seo-tag
-# logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Um blog para ajudar outro devs" # Site description and default description, also used in jekyll-seo-tag
 url: "https://stephhoel.github.io/StephHoel/" # Site url, also used in jekyll-seo-tag
 baseurl: "/StephHoel/"
