@@ -1,3 +1,8 @@
+---
+layout: post
+title: Comandos Git
+---
+
 # Comandos Git
 
 Neste artigo pretendo deixar alguns comandos git para não esquecer quando for necessário.

@@ -1,3 +1,8 @@
+---
+layout: post
+title: Padronizando Commits
+---
+
 # Padronizando Commits
 
 Para padronizar commits, uso dois utilitários: [commit lint](#commit-lint) e [commitizen](#commitizencz-cli).
