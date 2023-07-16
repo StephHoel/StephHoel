@@ -1,8 +1,14 @@
+---
+title: Padronizando Commits
+---
+
 # Padronizando Commits
 
 Para padronizar commits, uso dois utilitários: [commit lint](#commit-lint) e [commitizen](#commitizencz-cli).
 
 Neste tutorial, mostro o que aprendi com o vídeo da Rocketseat (referenciado no final) usando os utilitários localmente (para uso global, procure as documentações no final de cada parte).
+
+<!-- more -->
 
 ### commit lint
 
