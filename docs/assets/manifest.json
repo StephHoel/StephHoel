@@ -19,6 +19,6 @@ sitemap: false
       {% endfor %}
     ],
   {% endif -%}
-  "start_url": "/StephHoel/",
+  "start_url": "/",
   "display": "standalone"
 }
