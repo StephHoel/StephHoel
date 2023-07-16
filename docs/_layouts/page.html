@@ -8,28 +8,17 @@ layout: default
   <div class="container">
     <nav class="nav  nav--header">
       <ul class="list  list--nav">
-        Teste 
-        
-        {% for item in site.navigation_header %}
-    
-          {% if item.url contains '://' %}
-            {% assign url = item.url %}
-          {% else %}
-            {% assign url = item.url | relative_url %}
-          {% endif %}
-    
-          <li class="item  item--nav{% if item.url == page.url %}  item--current{% endif %}">
-            <a href="{{ url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
+        <li class="item  item--nav item--current">
+          <a href="/">Home</a>
+        </li>
+        <li class="item  item--nav item--current">
+          <a href="/blog">Blog</a>
+        </li>
       </ul>
-      <button class="button  button--nav" aria-label="Menu toggle">
-        {% include icon.html id="nav" title="Menu" %}
-      </button>
     </nav>
   </div>
 
-  {% include site-feature.html %}
+  <!-- {% include site-feature.html %} -->
 
 </header>
 
@@ -37,17 +26,36 @@ layout: default
 
   <article class="article  article--page  content  typeset">
 
-    <h1>{{ page.title }}</h1>
+    <h1>Home</h1>
 
     {{ content }}
 
   </article>
 
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+  <!-- {% if page.aside == true %}{% include site-aside.html %}{% endif %} -->
 
 </main>
 
-{% include site-footer.html %}
+<!-- {% include site-footer.html %} -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="copyright  typeset">
+      <small class="small">&copy; Steph Hoel 2023</small>
+    </div>
+
+    <!-- {% include nav-footer.html %} -->
+
+    <nav class="nav  nav--footer">
+      <ul class="list list--nav">
+        <li class="item  item--nav item--current">
+          <a href="https://darn.es">Created by David Darnes</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 
 
 <script type="text/javascript">
