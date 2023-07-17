@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Oi, meu nome é Steph'
+landing-title: 'Hallo, meu nome é Steph'
 description: null
 image: null
 author: Steph Hoel
