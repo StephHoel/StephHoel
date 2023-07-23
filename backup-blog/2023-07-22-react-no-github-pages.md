@@ -46,7 +46,6 @@ Alguns arquivos precisam ser criados:
 ```
 {
   "extends": [
-    // "next/core-web-vitals",
     "@rocketseat/eslint-config/react"
   ]
 }
