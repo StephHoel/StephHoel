@@ -18,7 +18,7 @@ Link para outras informações https://digitalinnovation.one/artigos/6-passos-pa
 
 ## 💬 Sobre Mim
 
-Atualmente eu sou DevJr (ou Sr.Assoc) na Avanade Brasil, na área de Engenharia de Software, e curso Tecnólogo em Sistemas para Internet.
+Atualmente eu sou DevJr (ou Sr.Assoc) na Avanade Brasil, na área de Engenharia de Software, e graduada em Sistemas para Internet.
 
 Estou desenvolvendo alguns projetos no meu pouco tempo livre e todos você pode ver aqui no GitHub. Quem quiser participar de algum, me chame no e-mail ou no discord para vermos onde podemos nos ajudar mutuamente!
 
