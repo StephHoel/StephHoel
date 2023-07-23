@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/StephHoel/static/css/main.534c2e9c.css",
-    "main.js": "/StephHoel/static/js/main.c9243c41.js",
+    "main.js": "/StephHoel/static/js/main.93932565.js",
     "index.html": "/StephHoel/index.html",
     "main.534c2e9c.css.map": "/StephHoel/static/css/main.534c2e9c.css.map",
-    "main.c9243c41.js.map": "/StephHoel/static/js/main.c9243c41.js.map"
+    "main.93932565.js.map": "/StephHoel/static/js/main.93932565.js.map"
   },
   "entrypoints": [
     "static/css/main.534c2e9c.css",
-    "static/js/main.c9243c41.js"
+    "static/js/main.93932565.js"
   ]
 }
