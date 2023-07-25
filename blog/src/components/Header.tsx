@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div className="flex justify-between text-6xl pl-4 pt-4 mb-8 uppercase">
       <a
-        href="#/"
+        href=""
         className="bg-white text-blue-950 text-xl pr-3 pl-5 py-1 tracking-[0.5rem] font-bold hover:bg-blue-400"
       >
         Steph Hoel

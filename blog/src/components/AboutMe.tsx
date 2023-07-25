@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="text-3xl space-y-8 text-justify border-t-2 pt-12">
+    <div className="text-3xl space-y-8 text-justify">
       <p className="text-5xl mb-4">Sobre Mim</p>
       <p>
         <i className="ph ph-check-circle mr-3" />
