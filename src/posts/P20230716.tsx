@@ -5,7 +5,6 @@ import Toggle from '../components/posts/Toggle'
 export default function P20230716() {
   return (
     <Toggle
-      href={'#/all_posts'}
       title={'3. Projeto Web com Firebase (sem servidor)'}
       date={'16 de Julho de 2023'}
     >

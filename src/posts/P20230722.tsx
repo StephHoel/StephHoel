@@ -4,7 +4,6 @@ import Toggle from '../components/posts/Toggle'
 export default function P20230722() {
   return (
     <Toggle
-      href={'#/all_posts'}
       title={'4. Projeto React no GitHub Pages'}
       date={'22 de Julho de 2023'}
     >

@@ -4,11 +4,7 @@ import Toggle from '../components/posts/Toggle'
 
 export default function P20230709() {
   return (
-    <Toggle
-      href={'#/all_posts'}
-      title={'1. Padronizando Commits'}
-      date={'09 de Julho de 2023'}
-    >
+    <Toggle title={'1. Padronizando Commits'} date={'09 de Julho de 2023'}>
       <div className="space-y-4">
         <p>
           Para padronizar commits, uso dois utilitários:{' '}
@@ -148,15 +144,13 @@ export default function P20230709() {
         </p>
       </div>
 
-      <div className="pt-8">
-        <p className="text-2xl">
-          {'>>>'} Baseado no vídeo{' '}
-          <Links href="https://www.youtube.com/watch?v=erInHkjxkL8">
-            Padronizando mensagens de commit do Git | Code/Drops #12
-          </Links>{' '}
-          do canal no youtube da{' '}
-          <Links href="https://www.youtube.com/@rocketseat">Rocketseat</Links>.
-        </p>
+      <div className="pt-8 text-2xl">
+        {'>>>'} Baseado no vídeo{' '}
+        <Links href="https://www.youtube.com/watch?v=erInHkjxkL8">
+          Padronizando mensagens de commit do Git | Code/Drops #12
+        </Links>{' '}
+        do canal no youtube da{' '}
+        <Links href="https://www.youtube.com/@rocketseat">Rocketseat</Links>.
       </div>
     </Toggle>
   )

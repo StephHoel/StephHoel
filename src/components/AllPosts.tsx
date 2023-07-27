@@ -5,15 +5,13 @@ import P20230722 from '../posts/P20230722'
 
 export default function AllPosts() {
   return (
-    <div className="text-white p-4">
-      <div className="mb-20">
-        <p className="text-5xl mb-4">Posts</p>
-        <p className="text-3xl">
-          Tenho alguns textos que gostaria de compartilhar com os devs
-          iniciantes ou não que sempre esquecem uma coisinha ou outra! É só
-          clicar nos títulos abaixo para abrir o texto completo.
-        </p>
-      </div>
+    <div className="text-white p-4 text-justify -my-12">
+      <p className="text-5xl mb-4">Posts</p>
+      <p className="text-3xl mb-20">
+        Tenho alguns textos que gostaria de compartilhar com os devs iniciantes
+        ou não que sempre esquecem uma coisinha ou outra! É só clicar nos
+        títulos abaixo para abrir o texto completo.
+      </p>
 
       <P20230709 />
 

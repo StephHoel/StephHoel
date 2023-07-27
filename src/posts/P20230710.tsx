@@ -3,11 +3,7 @@ import Toggle from '../components/posts/Toggle'
 
 export default function P20230710() {
   return (
-    <Toggle
-      href={'#/all_posts'}
-      title={'2. Comandos Git'}
-      date={'10 de Julho de 2023'}
-    >
+    <Toggle title={'2. Comandos Git'} date={'10 de Julho de 2023'}>
       <div className="space-y-4">
         <p>
           Neste artigo pretendo deixar alguns comandos git para não esquecer

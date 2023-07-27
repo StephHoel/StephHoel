@@ -1,13 +1,12 @@
 import { ReactNode, useState } from 'react'
 
 interface Props {
-  href: string
   title: string
   date: string
   children: ReactNode
 }
 
-export default function Toggle({ href, title, date, children }: Props) {
+export default function Toggle({ title, date, children }: Props) {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const handleToggle = () => {
@@ -25,12 +24,13 @@ export default function Toggle({ href, title, date, children }: Props) {
         <div>
           <p className="text-xl ml-8 -mt-4 mb-4 text-gray-300">{date}</p>
           {children}
-          <div className="text-right">
-            {href !== '' ? (
-              <a href={href}>
-                <i className="ph ph-arrow-circle-up text-5xl" />
-              </a>
-            ) : null}
+          <div
+            className="text-right mt-8 dk:cursor-pointer"
+            onClick={() => {
+              window.scrollTo(0, 0)
+            }}
+          >
+            <i className="ph ph-arrow-circle-up text-5xl" />
           </div>
         </div>
       )}
