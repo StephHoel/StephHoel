@@ -10,7 +10,15 @@ export default function Home() {
   const [page, setPage] = useState('')
 
   return (
-    <div className="app min-h-screen bg-[#282c34] text-white p-4">
+    <div
+      className={`app min-h-screen text-white p-4 bg-gradient-to-tl ${
+        page === 'posts'
+          ? 'from-[#1e2127] to-[#733695]'
+          : page === 'aboutme'
+          ? 'from-[#1e2127] to-[#3c9c9f]'
+          : 'from-[#1e2127] to-[#537ad6]'
+      }`}
+    >
       <header className="flex justify-between text-6xl pl-4 pt-4 mb-8 uppercase fd:space-x-12">
         <div
           onClick={() => setPage('')}
