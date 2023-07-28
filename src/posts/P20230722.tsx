@@ -92,14 +92,18 @@ export default function P20230722() {
             <p>&nbsp; &nbsp; {'<Routes>'}</p>
             <p>
               &nbsp; &nbsp; &nbsp;{' '}
-              {'<Route path="/" index element={<NovoComponente />} />'}
+              {
+                '<Route path="NomeRepositorio/" index element={<NovoComponente />} />'
+              }
             </p>
             <p>&nbsp; &nbsp; {'</Routes>'}</p>
             <p>&nbsp; {')'}</p>
             <p>{'}'}</p>
           </div>
           <p className="ml-8">
-            Onde &quot;NovoComponente&quot; é o componente onde haverá a tela.
+            Onde &quot;NovoComponente&quot; é o componente onde haverá a tela e
+            &quot;NomeRepositorio&quot; é o nome do seu repositório (onde seu
+            projeto está no github).
           </p>
           <p className="ml-8">
             Ps: Se precisar criar várias telas, experimente usar useState para
