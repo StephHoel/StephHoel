@@ -7,7 +7,7 @@ import './style.css'
 export default function App() {
   return (
     <Routes>
-      <Route path="/" index element={<Home />} />
+      <Route path="StephHoel/" index element={<Home />} />
     </Routes>
   )
 }
