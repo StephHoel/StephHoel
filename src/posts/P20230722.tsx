@@ -15,7 +15,7 @@ export default function P20230722() {
         </p>
 
         <p className="ml-4">
-          1. Criar um projeto react:{' '}
+          1. Crie um projeto react:{' '}
           <Code>
             npx create-react-app nome_do_projeto --template typescript
           </Code>{' '}
@@ -23,7 +23,7 @@ export default function P20230722() {
         </p>
 
         <p className="ml-4">
-          2. Instalar a dependência do gh-pages: <Code>npm i gh-pages -D</Code>
+          2. Instale a dependência do gh-pages: <Code>npm i gh-pages -D</Code>
         </p>
 
         <p className="ml-4">
@@ -56,15 +56,69 @@ export default function P20230722() {
           onde os valores entre chaves devem ser alterados para o seu caso.
         </p>
 
-        <p>5. Faça o commit para o repositório.</p>
+        <p>
+          5. Instale a denpedência do react-router-dom:{' '}
+          <Code>npm i react-router-dom</Code>
+        </p>
+
+        <div>
+          <p>
+            6. Configure o arquivo <Code>index.tsx</Code> mudando de:
+          </p>
+          <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
+            <p>{'<React.StrictMode>'}</p>
+            <p>&nbsp; {'<App />'}</p>
+            <p>{'</React.StrictMode>'}</p>
+          </div>
+          <p className="ml-8">Para:</p>
+          <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
+            <p>{'<React.StrictMode>'}</p>
+            <p>&nbsp; {'<BrowserRouter>'}</p>
+            <p>&nbsp; &nbsp; {'<App />'}</p>
+            <p>&nbsp; {'</BrowserRouter>'}</p>
+            <p>{'</React.StrictMode>'}</p>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            7. E configure <Code>App.tsx</Code> mudando todo o código para:
+          </p>
+          <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
+            <p>{"import { Route, Routes } from 'react-router-dom'"}</p>
+            <p>{"import './index.css'"}</p>
+            <p>{'export default function App() {'}</p>
+            <p>&nbsp; {'return ('}</p>
+            <p>&nbsp; &nbsp; {'<Routes>'}</p>
+            <p>
+              &nbsp; &nbsp; &nbsp;{' '}
+              {'<Route path="/" index element={<NovoComponente />} />'}
+            </p>
+            <p>&nbsp; &nbsp; {'</Routes>'}</p>
+            <p>&nbsp; {')'}</p>
+            <p>{'}'}</p>
+          </div>
+          <p className="ml-8">
+            Onde &quot;NovoComponente&quot; é o componente onde haverá a tela.
+          </p>
+          <p className="ml-8">
+            Ps: Se precisar criar várias telas, experimente usar useState para
+            mudar entre as telas.
+          </p>
+        </div>
 
         <p>
-          6. Depois use o comando <Code>npm run deploy</Code> no terminal para
+          8. Faça as alterações para criar sua página e então faça o commit para
+          o repositório.
+        </p>
+
+        <p>
+          9. Depois use o comando <Code>npm run deploy</Code> no terminal para
           criar as páginas estáticas.
         </p>
 
         <p>
-          7. E então configure o github pages para a branch{' '}
+          10. E então configure o github pages para a branch{' '}
           <Code>gh-pages</Code> na raiz.
         </p>
 
