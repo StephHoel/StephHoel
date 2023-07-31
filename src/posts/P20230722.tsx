@@ -73,9 +73,9 @@ export default function P20230722() {
           <p className="ml-8">Para:</p>
           <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
             <p>{'<React.StrictMode>'}</p>
-            <p>&nbsp; {'<BrowserRouter>'}</p>
-            <p>&nbsp; &nbsp; {'<App />'}</p>
-            <p>&nbsp; {'</BrowserRouter>'}</p>
+            <p>&nbsp;{' <BrowserRouter>'}</p>
+            <p>&nbsp;&nbsp;&nbsp;{' <App />'}</p>
+            <p>&nbsp;{' </BrowserRouter>'}</p>
             <p>{'</React.StrictMode>'}</p>
           </div>
         </div>
@@ -92,9 +92,9 @@ export default function P20230722() {
             <p>&nbsp; &nbsp; {'<Routes>'}</p>
             <p>
               &nbsp; &nbsp; &nbsp;{' '}
-              {
-                '<Route path="NomeRepositorio/" index element={<NovoComponente />} />'
-              }
+              {'<Route path="/" index element={<NovoComponente />} />'}
+              &nbsp; &nbsp; &nbsp;{' '}
+              {'<Route path="NomeRepositorio/" element={<NovoComponente />} />'}
             </p>
             <p>&nbsp; &nbsp; {'</Routes>'}</p>
             <p>&nbsp; {')'}</p>
@@ -148,23 +148,13 @@ export default function P20230722() {
           <Code>
             echo -e {'"{\\n'}&nbsp; \&quot;extends\&quot;: [\n&nbsp;&nbsp;&nbsp;
             \&quot;@rocketseat/eslint-config/react\&quot;\n&nbsp; ]{'\\n}"'}{' '}
-            {'>'} .eslintrc.json
-          </Code>
-        </p>
-        <p>
-          <Code>
-            echo -e &quot;export const plugins = {'{\\n'}
-            &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer: {'{},\\n}" >'}{' '}
-            postcss.config.js
-          </Code>
-        </p>
-        <p>
-          <Code>
-            echo -e {'"/** @type {'}import(&apos;tailwindcss&apos;).Config
-            {'} */'}\nexport const purge = [&apos;./src/**/*.{'{'}
-            js,jsx,ts,tsx&apos;{'}'}, &apos;./public/index.html&apos;]\nexport
-            const theme = {'{'}\n&nbsp; extend: {'{},\\n}" >'}{' '}
-            tailwind.config.js
+            {'>'} .eslintrc.json && echo -e &quot;export const plugins ={' '}
+            {'{\\n'} &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer:{' '}
+            {'{},\\n}" >'} postcss.config.js && echo -e {'"/** @type {'}{' '}
+            import(&apos;tailwindcss&apos;).Config {'} */'}\nexport const purge
+            = [&apos;./src/**/*.{'{'} js,jsx,ts,tsx&apos;{'}'},
+            &apos;./public/index.html&apos;]\nexport const theme = {'{'}\n&nbsp;
+            extend: {'{},\\n}" >'} tailwind.config.js
           </Code>
         </p>
         <p>
