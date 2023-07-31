@@ -163,6 +163,13 @@ export default function P20230722() {
           Esses comandos servem para criar os arquivos de configuração que
           precisam estar na raiz do projeto.
         </p>
+        <p>
+          Se usar a dependência TailWindCss, você vai precisar adicionar 3
+          linhas no começo do arquivo .css:
+        </p>
+        <p>@tailwind base;</p>
+        <p>@tailwind components;</p>
+        <p>@tailwind utilities;</p>
       </div>
     </Toggle>
   )
