@@ -154,7 +154,7 @@ export default function P20230722() {
         <p>
           <Code>
             echo -e &quot;export const plugins = {'{\\n'}
-            &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer: {'{},\n}" >'}{' '}
+            &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer: {'{},\\n}" >'}{' '}
             postcss.config.js
           </Code>
         </p>
@@ -162,8 +162,9 @@ export default function P20230722() {
           <Code>
             echo -e {'"/** @type {'}import(&apos;tailwindcss&apos;).Config
             {'} */'}\nexport const purge = [&apos;./src/**/*.{'{'}
-            js,jsx,ts,tsx&apos;, &apos;./public/index.html&apos;]\nexport const
-            theme = {'{'}\n&nbsp; extend: {'{},\\n}" >'} tailwind.config.js
+            js,jsx,ts,tsx&apos;{'}'}, &apos;./public/index.html&apos;]\nexport
+            const theme = {'{'}\n&nbsp; extend: {'{},\\n}" >'}{' '}
+            tailwind.config.js
           </Code>
         </p>
         <p>
