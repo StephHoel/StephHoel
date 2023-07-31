@@ -93,6 +93,8 @@ export default function P20230722() {
             <p>
               &nbsp; &nbsp; &nbsp;{' '}
               {'<Route path="/" index element={<NovoComponente />} />'}
+            </p>
+            <p>
               &nbsp; &nbsp; &nbsp;{' '}
               {'<Route path="NomeRepositorio/" element={<NovoComponente />} />'}
             </p>
@@ -152,7 +154,7 @@ export default function P20230722() {
             {'{\\n'} &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer:{' '}
             {'{},\\n}" >'} postcss.config.js && echo -e {'"/** @type {'}{' '}
             import(&apos;tailwindcss&apos;).Config {'} */'}\nexport const purge
-            = [&apos;./src/**/*.{'{'} js,jsx,ts,tsx&apos;{'}'},
+            = [&apos;./src/**/*.{'{'} js,jsx,ts,tsx{"}'"},
             &apos;./public/index.html&apos;]\nexport const theme = {'{'}\n&nbsp;
             extend: {'{},\\n}" >'} tailwind.config.js
           </Code>
