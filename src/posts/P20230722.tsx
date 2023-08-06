@@ -69,7 +69,7 @@ export default function P20230722() {
           <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
             <p>import React from &apos;react&apos;</p>
             <p>import ReactDOM from &apos;react-dom/client&apos;</p>
-            <p>import App from &apos;./app&apos;</p>
+            <p>import App from &apos;./App&apos;</p>
             <p>import &apos;./index.css&apos;</p>
             <p>{"import { BrowserRouter } from 'react-router-dom'"}</p>
             <p></p>
@@ -175,11 +175,13 @@ export default function P20230722() {
           Se usar a dependência TailWindCss, você vai precisar adicionar 3
           linhas no começo do arquivo .css:
         </p>
-        <Code>
-          <p>@tailwind base;</p>
-          <p>@tailwind components;</p>
-          <p>@tailwind utilities;</p>
-        </Code>
+        <p>
+          <Code>
+            <p>@tailwind base;</p>
+            <p>@tailwind components;</p>
+            <p>@tailwind utilities;</p>
+          </Code>
+        </p>
       </div>
     </Toggle>
   )
