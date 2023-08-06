@@ -49,7 +49,7 @@ export default function P20230722() {
           4. Tem que adicionar também no package.json, uma linha para a
           propriedade homepage:{' '}
           <Code>
-            &quot;homepage&quot;: &quot;http://{'{'}github-username{'}'}
+            &quot;homepage&quot;: &quot;https://{'{'}github-username{'}'}
             .github.io/{'{'}
             repo-name{'}'}&quot;,
           </Code>{' '}
@@ -151,7 +151,7 @@ export default function P20230722() {
             echo -e {'"{\\n'}&nbsp; \&quot;extends\&quot;: [\n&nbsp;&nbsp;&nbsp;
             \&quot;@rocketseat/eslint-config/react\&quot;\n&nbsp; ]{'\\n}"'}{' '}
             {'>'} .eslintrc.json && echo -e &quot;export const plugins ={' '}
-            {'{\\n'} &nbsp; tailwindcss: {'{},\\n'}&nbsp; autoprefixer:{' '}
+            {'{\\n'} &nbsp;tailwindcss: {'{},\\n'}&nbsp; autoprefixer:{' '}
             {'{},\\n}" >'} postcss.config.js && echo -e {'"/** @type {'}{' '}
             import(&apos;tailwindcss&apos;).Config {'} */'}\nexport const purge
             = [&apos;./src/**/*.{'{'} js,jsx,ts,tsx{"}'"},
