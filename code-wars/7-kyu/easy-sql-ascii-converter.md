@@ -1,5 +1,7 @@
 # 7 kyu - Easy SQL: ASCII Converter
 
+## Description:
+
 Dada uma tabela demográfica no seguinte formato:
 
 ** esquema da tabela de demografia **
@@ -13,7 +15,8 @@ Você precisa retornar a mesma tabela onde todos os campos de texto (nome & raç
 
 por exemplo, Verlie = 86 Warren = 87 Horácio = 72 Tracy = 84
 
-Código:
+## Código:
+
 ```sql
 SELECT
   id,

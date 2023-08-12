@@ -1,5 +1,7 @@
 # 7 kyu - SQL with Street Fighter: Total Wins
 
+## Description:
+
 It's time to assess which of the world's greatest fighters are through to the 6 coveted places in the semi-finals of the Street Fighter World Fighting Championship. Every fight of the year has been recorded and each fighter's wins and losses need to be added up.
 
 Each row of the table fighters records, alongside the fighter's name, whether they won (1) or lost (0), as well as the type of move that ended the bout.
@@ -22,7 +24,8 @@ Do not count any wins or losses where the winning move was Hadoken, Shouoken or 
 Order from most-wins to least
 Return the top 6. Don't worry about ties.
 
-Código:
+## Código:
+
 ```sql
 SELECT
   name,
