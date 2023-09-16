@@ -2,6 +2,7 @@ import P20230709 from '../posts/P20230709'
 import P20230710 from '../posts/P20230710'
 import P20230716 from '../posts/P20230716'
 import P20230722 from '../posts/P20230722'
+import P20230915 from '../posts/P20230915'
 
 export default function AllPosts() {
   return (
@@ -20,6 +21,8 @@ export default function AllPosts() {
       <P20230716 />
 
       <P20230722 />
+
+      <P20230915 />
     </div>
   )
 }
