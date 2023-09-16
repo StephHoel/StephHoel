@@ -162,7 +162,7 @@ export default function P20230722() {
             {'{\\n'} &nbsp;tailwindcss: {'{},\\n'}&nbsp; autoprefixer:{' '}
             {'{},\\n}" >'} postcss.config.js && echo -e {'"/** @type {'}{' '}
             import(&apos;tailwindcss&apos;).Config {'} */'}\nexport const purge
-            = [&apos;./src/**/*.{'{'} js,jsx,ts,tsx{"}'"},
+            = [&apos;./src/**/*.{'{'}js,jsx,ts,tsx{"}'"},
             &apos;./public/index.html&apos;]\nexport const theme = {'{'}\n&nbsp;
             extend: {'{},\\n}" >'} tailwind.config.js
           </Code>
@@ -177,9 +177,11 @@ export default function P20230722() {
         </p>
         <p>
           <Code>
-            <p>@tailwind base;</p>
-            <p>@tailwind components;</p>
-            <p>@tailwind utilities;</p>
+            @tailwind base;
+            <br />
+            @tailwind components;
+            <br />
+            @tailwind utilities;
           </Code>
         </p>
       </div>

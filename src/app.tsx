@@ -8,6 +8,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="StephHoel/" index element={<Home />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   )
 }
