@@ -10,8 +10,8 @@ export default function P20230722() {
       <div className="space-y-4">
         <p>
           Demorei um pouco para conseguir, mas finalmente encontrei uma forma de
-          criar um projeto react e publicar no github pages. Precisamos seguir
-          alguns passos:
+          criar um projeto react e publicar no github pages (utilizando rotas!).
+          Precisamos seguir alguns passos:
         </p>
 
         <p className="ml-4">
@@ -27,22 +27,20 @@ export default function P20230722() {
         </p>
 
         <p className="ml-4">
-          3. Adicionar instruções no package.json, na parte dos scripts:
+          3. Adicionar instruções no package.json, na parte dos scripts, que
+          deve ficar mais ou menos assim:
         </p>
         <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
-          <p>&quot;predeploy&quot;: &quot;npm run build&quot;,</p>
-          <p>&quot;deploy&quot;: &quot;gh-pages -d build&quot;,</p>
-        </div>
-        <p className="ml-8">Que deve ficar mais ou menos assim:</p>
-        <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
-          <p>&quot;scripts&quot;: {'{'}</p>
-          <p>&nbsp; &quot;start&quot;: &quot;react-scripts start&quot;,</p>
-          <p>&nbsp; &quot;build&quot;: &quot;react-scripts build&quot;,</p>
-          <p>&nbsp; &quot;test&quot;: &quot;react-scripts test&quot;,</p>
-          <p>&nbsp; &quot;eject&quot;: &quot;react-scripts eject&quot;,</p>
-          <p>&nbsp; &quot;predeploy&quot;: &quot;npm run build&quot;,</p>
-          <p>&nbsp; &quot;deploy&quot;: &quot;gh-pages -d build&quot;</p>
-          <p>{'},'}</p>
+          &quot;scripts&quot;: {'{'} <br />
+          &nbsp; &quot;start&quot;: &quot;react-scripts start&quot;, <br />
+          &nbsp; &quot;build&quot;: &quot;react-scripts build&quot;, <br />
+          &nbsp; &quot;test&quot;: &quot;react-scripts test&quot;, <br />
+          &nbsp; &quot;eject&quot;: &quot;react-scripts eject&quot;, <br />
+          &nbsp; &quot;predeploy&quot;: &quot;npm run build&quot;, {'<---'}
+          <br />
+          &nbsp; &quot;deploy&quot;: &quot;gh-pages -d build&quot; {'<---'}
+          <br />
+          {'},'} <br />
         </div>
 
         <p>
@@ -67,24 +65,23 @@ export default function P20230722() {
             para:
           </p>
           <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
-            <p>import React from &apos;react&apos;</p>
-            <p>import ReactDOM from &apos;react-dom/client&apos;</p>
-            <p>import App from &apos;./App&apos;</p>
-            <p>import &apos;./index.css&apos;</p>
-            <p>{"import { BrowserRouter } from 'react-router-dom'"}</p>
-            <p></p>
-            <p>
-              const root =
-              ReactDOM.createRoot(document.getElementById(&apos;root&apos;) as
-              HTMLElement)
-            </p>
-            <p>root.render(</p>
-            <p>&nbsp;&nbsp;{'<React.StrictMode>'}</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;{'<BrowserRouter>'}</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<App />'}</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;{'</BrowserRouter>'}</p>
-            <p>&nbsp;&nbsp;{'</React.StrictMode>,'}</p>
-            <p>)</p>
+            import React from &apos;react&apos; <br />
+            import ReactDOM from &apos;react-dom/client&apos; <br />
+            import App from &apos;./App&apos; <br />
+            import &apos;./index.css&apos; <br />
+            {"import { HashRouter } from 'react-router-dom'"} <br />
+            <br />
+            const root =
+            ReactDOM.createRoot(document.getElementById(&apos;root&apos;) as
+            HTMLElement)
+            <br />
+            root.render( <br />
+            &nbsp;&nbsp;{'<React.StrictMode>'} <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;{'<HashRouter>'} <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<App />'} <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;{'</HashRouter>'} <br />
+            &nbsp;&nbsp;{'</React.StrictMode>,'} <br />
+            ) <br />
           </div>
         </div>
 
@@ -93,31 +90,36 @@ export default function P20230722() {
             7. E configure <Code>App.tsx</Code> mudando todo o código para:
           </p>
           <div className="bg-gray-700 text-amber-600 w-fit px-2 py-1 rounded font-bold ml-8">
-            <p>{"import { Route, Routes } from 'react-router-dom'"}</p>
-            <p>{"import './index.css'"}</p>
-            <p>{'export default function App() {'}</p>
-            <p>&nbsp; {'return ('}</p>
-            <p>&nbsp; &nbsp; {'<Routes>'}</p>
-            <p>
-              &nbsp; &nbsp; &nbsp;{' '}
-              {'<Route path="/" index element={<NovoComponente />} />'}
-            </p>
-            <p>
-              &nbsp; &nbsp; &nbsp;{' '}
-              {'<Route path="NomeRepositorio/" element={<NovoComponente />} />'}
-            </p>
-            <p>&nbsp; &nbsp; {'</Routes>'}</p>
-            <p>&nbsp; {')'}</p>
-            <p>{'}'}</p>
+            {"import { Route, Routes } from 'react-router-dom'"} <br />
+            {"import './index.css'"} <br />
+            {'export default function App() {'} <br />
+            &nbsp; {'return ('} <br />
+            &nbsp; &nbsp; {'<Routes>'} <br />
+            &nbsp; &nbsp; &nbsp;{' '}
+            {'<Route path="/" index element={<NovoComponente />} />'} <br />
+            &nbsp; &nbsp; &nbsp;{' '}
+            {'<Route path="/outro-componente" element={<OutroComponente />} />'}
+            <br />
+            &nbsp; &nbsp; &nbsp;{' '}
+            {'<Route path="NomeRepositorio/" element={<NovoComponente />} />'}
+            <br />
+            &nbsp; &nbsp; &nbsp;{' '}
+            {
+              '<Route path="NomeRepositorio/outro-componente" element={<OutroComponente />} />'
+            }
+            <br />
+            &nbsp; &nbsp; {'</Routes>'} <br />
+            &nbsp; {')'} <br />
+            {'}'} <br />
           </div>
           <p className="ml-8">
-            Onde &quot;NovoComponente&quot; é o componente onde haverá a tela e
-            &quot;NomeRepositorio&quot; é o nome do seu repositório (onde seu
-            projeto está no github).
+            Onde &quot;NovoComponente&quot; e &quot;OutroComponente&quot; são os
+            componentes onde estarão as telas e &quot;NomeRepositorio&quot; é o
+            nome do seu repositório (onde seu projeto está no github).
           </p>
           <p className="ml-8">
-            Ps: Se precisar criar várias telas, experimente usar useState para
-            mudar entre as telas.
+            Ps: Use {"<Link to='/outro-componente'></Link>"} no lugar de{' '}
+            {"<a href='/outro-componente'></a>"} para conseguir usar as rotas.
           </p>
         </div>
 
@@ -139,14 +141,22 @@ export default function P20230722() {
         <p className="pt-4">{'>'} Dicas adicionais:</p>
 
         <p>
-          Caso queira implementar seu projeto, instale e use as dependências a
-          seguir:
+          Caso queira deixar seu projeto mais lindo s2, instale e use as
+          dependências a seguir:
         </p>
         <p className="ml-4">
           <Code>npm i autoprefixer tailwindcss eslint postcss</Code>
         </p>
         <p className="ml-4">
+          Ps: As dependências autoprefixer, tailwindcss e postcss servem para
+          facilitar a estilização das páginas. A dependência eslint é para fazer
+          a análise do código e encontrar possíveis problemas.
+        </p>
+        <p className="ml-4">
           <Code>npm i -D @rocketseat/eslint-config</Code>
+        </p>
+        <p className="ml-4">
+          Ps: A dependência acima é um conjunto de regras para o eslint.
         </p>
 
         <p>
